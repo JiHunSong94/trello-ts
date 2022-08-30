@@ -10,15 +10,24 @@ const Wrapper = styled.div`
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 `;
 
 const Boards = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  aligh-items: flex-start;
   width: 100%;
   gap: 10px;
+`;
+
+const Trash = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fecc0e;
+  height: 80px;
+  width: 100px;
 `;
 
 function App() {
@@ -65,6 +74,9 @@ function App() {
           ))}
         </Boards>
       </Wrapper>
+      <div style={{ justifyContent: "center", alignItems: "center" }}>
+        <Trash>Trash</Trash>
+      </div>
     </DragDropContext>
   );
 }
